@@ -1,6 +1,6 @@
 local M = {}
-local cfg = vim.g.onedark_config
-local c = require 'onedark.colors'
+local cfg = vim.g.incorrectish_colors_config
+local c = require 'incorrectish_colors.colors'
 
 function M.setup()
     if not cfg.term_colors then return end
