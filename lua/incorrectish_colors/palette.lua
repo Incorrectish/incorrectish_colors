@@ -25,6 +25,7 @@ local dark_purple = "#21166f"
 local diff_add = util.darken(blue, 0.18, bg0)
 local diff_delete = util.darken(red, 0.22, bg0)
 local diff_change = util.darken(green, 0.22, bg0)
+local dark_green = util.darken(green, 0.40, bg0)
 local diff_text = "#103a66"
 
 return {
@@ -51,6 +52,7 @@ return {
 	dark_red = dark_red,
 	dark_yellow = dark_yellow,
 	dark_purple = dark_purple,
+	dark_green = dark_green,
 	diff_add = diff_add,
 	diff_delete = diff_delete,
 	diff_change = diff_change,
