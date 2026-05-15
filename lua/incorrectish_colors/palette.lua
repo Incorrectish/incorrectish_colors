@@ -87,15 +87,15 @@ return {
 	deep = {
 
 
-		black = "#1f2329",
+		black = "#010711",
 		bg0 = "#040c16",
-		bg1 = "#282c34",
+		bg1 = "#071426",
 		bg2 = "#30363f",
 		bg3 = "#1C2837",
 		-- bg3 = "#323641",
 		bg_d = "#181b20",
-		bg_blue = "#61afef",
-		bg_yellow = "#A80844",
+		bg_blue = "#123a66",
+		bg_yellow = "#3a1645",
 		fg = "#1A93F9",
 		purple = "#5b49fc",
 		green = "#00ffe9",
@@ -106,14 +106,14 @@ return {
 		red = "#ff0030",
 		grey = "#455574",
 		light_grey = "#7a818e",
-		dark_cyan = "#266269",
-		dark_red = "#8b3434",
-		dark_yellow = "#835d1a",
-		dark_purple = "#7e3992",
-		diff_add = "#272e23",
-		diff_delete = "#2d2223",
-		diff_change = "#172a3a",
-		diff_text = "#274964",
+		dark_cyan = "#0a4655",
+		dark_red = "#4a0b1d",
+		dark_yellow = "#44164f",
+		dark_purple = "#21166f",
+		diff_add = "#00332f", -- blue-green shadow
+		diff_delete = "#a80844", -- dark pink-red shadow
+		diff_change = "#061b34", -- deep blue shadow
+		diff_text = "#103a66", -- stronger blue changed text block
 	},
 	--
 	-- warm = {
