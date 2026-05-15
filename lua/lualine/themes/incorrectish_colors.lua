@@ -1,5 +1,6 @@
 local c = require('incorrectish_colors.colors')
-local cfg = vim.g.incorrectish_colors_config
+local cfg = vim.g.incorrectish_colors_config or {}
+local lualine_cfg = cfg.lualine or {}
 local colors = {
     bg = c.bg0,
     fg = c.fg,
@@ -12,16 +13,16 @@ local colors = {
     gray = c.grey
 }
 
-local one_dark = {
+local incorrectish_colors = {
     inactive = {
         a = {fg = colors.gray, bg = colors.bg, gui = 'bold'},
         b = {fg = colors.gray, bg = colors.bg},
-        c = {fg = colors.gray, bg = cfg.lualine.transparent and c.none or c.bg1},
+        c = {fg = colors.gray, bg = lualine_cfg.transparent and c.none or c.bg1},
     },
     normal = {
         a = {fg = colors.bg, bg = colors.green, gui = 'bold'},
         b = {fg = colors.fg, bg = c.bg3},
-        c = {fg = colors.fg, bg = cfg.lualine.transparent and c.none or c.bg1},
+        c = {fg = colors.fg, bg = lualine_cfg.transparent and c.none or c.bg1},
     },
     visual = {a = {fg = colors.bg, bg = colors.purple, gui = 'bold'}},
     replace = {a = {fg = colors.bg, bg = colors.red, gui = 'bold'}},
@@ -29,4 +30,5 @@ local one_dark = {
     command = {a = {fg = colors.bg, bg = colors.yellow, gui = 'bold'}},
     terminal = {a = {fg = colors.bg, bg = colors.cyan, gui = 'bold'}},
 }
-return one_dark;
+
+return incorrectish_colors

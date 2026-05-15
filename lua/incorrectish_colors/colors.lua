@@ -1,10 +1,8 @@
-local colors = require("incorrectish_colors.palette")
+local palette = require("incorrectish_colors.palette")
 
 local function select_colors()
-	local selected = { none = "none" }
-	selected = vim.tbl_extend("force", selected, colors[vim.g.incorrectish_colors_config.style])
-	selected = vim.tbl_extend("force", selected, vim.g.incorrectish_colors_config.colors)
-	return selected
+	local cfg = vim.g.incorrectish_colors_config or {}
+	return vim.tbl_extend("force", palette, cfg.colors or {})
 end
 
 return select_colors()
