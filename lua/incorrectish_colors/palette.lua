@@ -22,9 +22,9 @@ local dark_cyan = "#0a4655"
 local dark_red = "#4a0b1d"
 local dark_yellow = "#44164f"
 local dark_purple = "#21166f"
-local diff_add = util.darken(blue, 0.18, bg0)
+local diff_change = util.darken(blue, 0.18, bg0)
 local diff_delete = util.darken(red, 0.22, bg0)
-local diff_change = util.darken(green, 0.22, bg0)
+local diff_add = util.darken(green, 0.22, bg0)
 local dark_green = util.darken(green, 0.40, bg0)
 local diff_text = "#103a66"
 
